@@ -1,3 +1,3 @@
 function mensaje(){
-    alert("hola pendejos");
+    alert("hola pendejos!");
 }

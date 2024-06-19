@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/codigo.js"></script>
+	<meta charset="iso-8559-1"/>
+	<meta name="description" content="Página de inicio"/>
+	<meta name="keywords" content="religion, cristianismo, Jesus"/>
+	<title>El Taller</title>
+	<link href="css/estilo.css" rel="stylesheet type="text/css"/>
+	<script src="scripts/dom.js" ></script>
+	
 </head>
-<body onload="mensaje()">
-    <h1>Reproductor Mp3</h1>
-    <br>
-    <p>texto de prueba</p>
-    <p>texto dos de prueba</p>
+<body>
+	<header>
+		<h1>El Reproductor</h1>
+	</header>
+	
+	<div id="reproductor">
+		<label id="titleSong" ></label>
+		<audio id="cancion" src="" controls autoplay></<audio>
+	</div>
+	
+	<button type="button" onclick="aleatorio()">Aleatorio</button>
+	<button type="button" onclick="anterior()">Anterior</button>
+	<button type="button" onclick="siguiente()">Siguiente</button>
+	
+	<input type="file" id="inputFile"  onchange="getUrl()" multiple> 
+	<div id="listing" ></div>
+	
 </body>
 </html>

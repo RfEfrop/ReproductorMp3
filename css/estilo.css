@@ -1,7 +1,32 @@
-body{
-    background-color: black;
 
+body{
+	background-color:mintcream;
 }
-h1{
-    color: whitesmoke;
+	footer{
+	position: bottom;
+	background-color:papayawhip;
+}
+a{
+    border:1px solid;
+	display:block;
+	margin-bottom:3px;
+	}
+	
+
+a:hover{
+	background-color: #FFC300 ;
+}
+a:active {
+  background-color: #DAF7A6;
+}
+label{
+	display:block;
+	background-color:#DAF7A6 ;
+	margin-bottom:10px;
+}
+audio{
+	margin-bottom:10px;
+}
+#inputFile{
+	margin-bottom:10px;
 }

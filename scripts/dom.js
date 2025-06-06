@@ -41,7 +41,7 @@ function getUrl(){
 	lista();
 }
 function lista(){
-	for(i=0;i<canciones.length-1;i++){
+	for(i=0;i<canciones.length;i++){
 	var newLi=document.createElement("a");
 	newLi.setAttribute("onclick","seleccion("+"'"+url+canciones[i]+"'"+")");
 	var contentLi=document.createTextNode(canciones[i]);

@@ -1,6 +1,6 @@
 
 body{
-	background-color:mintcream;
+	background-color:#ffa200;
 }
 	footer{
 	position: bottom;
@@ -21,7 +21,7 @@ a:active {
 }
 label{
 	display:block;
-	background-color:#DAF7A6 ;
+	background-color:#FFC300 ;
 	margin-bottom:10px;
 }
 audio{
@@ -29,4 +29,57 @@ audio{
 }
 #inputFile{
 	margin-bottom:10px;
+}
+ul#playlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#playlist li {
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+ul#playlist li:hover {
+    background-color: #FFC300;
+}
+
+ul#playlist li:active {
+    background-color: #FFC300;
+}
+.menu-lateral {
+	position: absolute;
+	top: 120px; /* debajo del título */
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 15px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-lateral button,
+.menu-lateral input[type="file"] {
+	padding: 8px 12px;
+	font-size: 14px;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: gray;
+	background-color: whitesmoke;
+	color: black;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.menu-lateral button:hover,
+.menu-lateral input[type="file"]:hover {
+	background-color: #FFC300;
 }

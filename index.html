@@ -17,13 +17,15 @@
 		<label id="titleSong" ></label>
 		<audio id="cancion" src="" controls autoplay></audio>
 	</div>
-	
+	<div class="menu-lateral">
 	<button type="button" onclick="aleatorio()">Aleatorio</button>
 	<button type="button" onclick="anterior()">Anterior</button>
 	<button type="button" onclick="siguiente()">Siguiente</button>
-	
+	<button type="button" onclick="limpiarPlaylistGuardada()">Borrar playlist guardada</button>
+	<button type="button" onclick="cargarPlaylist()">Recargar canciones</button>
+		
 	<input type="file" id="inputFile"  onchange="getUrl()" multiple> 
-	<div id="listing" ></div>
-	
+	</div>
+	<div id="listing"></div>	
 </body>
 </html>
